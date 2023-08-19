@@ -29,7 +29,7 @@
      - You can directly run this command which will create virtualenv in the directory . Here you dont need to create the folder explicitly. It will automatically create the folder - `python3 -m venv <directory-name>`
     
     <h3>Let's see how to setup the Django Project</h3>
-    
+
       - In the current working directory make as virtual environment.
       - Activate the virtual environment.
       - Download the (LTS) verision of Django using `pip install Django==4.2.4`
@@ -42,5 +42,11 @@
       - You can do -> `pip freeze > requirements.txt`
       - So if somebody is setting up the project  he or she can run `pip install -r requirements.txt`
   
-3. Databases and WebPages ->
+3. To run the project ->
+      - to run development server `python manage.py runserver`
+      - It will open the default django web page.
+
+4. What are VIEWS ?
+      - Views : 
+
   
