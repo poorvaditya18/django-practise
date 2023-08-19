@@ -5,7 +5,8 @@
 1. 😄 Learn about "htmx" -> instead of rendering complete html page or json object. You can do this inline using htmx. This is handled dynamically.
     link: `https://htmx.org/docs/#introduction`
 
-2. 🤔 Requirments ->
+2. 🤔 Some Prerequisites and tips  ->
+   
    - Install the latest python version preferably python3
    - Later verfiy installation using  `python3 --version`
   
@@ -24,4 +25,20 @@
    - run `ls` you will see list of configuration files. 
    - Now activate the virtual environment using `source bin/activate`
    - You can Deactivate the virtual environment using `deactivate`
+   - You can directly run this command which will create virtualenv in the directory . Here you dont need to create the folder explicitly. It will automatically create the folder - `python3 -m venv <directory-name>`
   
+    <h3>Let's see how to setup the Django Project </h3>
+    - In the current working directory make as virtual environment.
+    - Activate the virtual environment.
+    - Download the (LTS) verision of Django using `pip install Django==4.2.4`
+    - `pip freeze` -> will list down the different versions that are installed. 
+    - Since I  use mac and linux 😄 -> if want to list down different commands for that django supports use `django-admin`.
+    - To start the project `python -m django startproject <projectName> <directoryPath>`
+    - You can also setup mutliple projects in a single directory. But note you are not allowed to overlay the manage.py file. 
+      - CommandError: manage.py already exists. Overlaying a project into an existing directory won't replace conflicting files.
+    - It's a good practise to maintain the `requirements.txt` file. 
+    - You can do -> `pip freeze > requirements.txt`
+    - So if somebody is setting up the project  he or she can run `pip install -r requirements.txt`
+  
+3. Databases and WebPages ->
+   - 
