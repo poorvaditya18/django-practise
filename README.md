@@ -28,7 +28,8 @@
      - You can Deactivate the virtual environment using `deactivate`
      - You can directly run this command which will create virtualenv in the directory . Here you dont need to create the folder explicitly. It will automatically create the folder - `python3 -m venv <directory-name>`
     
-    <h3>Let's see how to setup the Django Project </h3>
+    <h3>Let's see how to setup the Django Project</h3>
+    
       - In the current working directory make as virtual environment.
       - Activate the virtual environment.
       - Download the (LTS) verision of Django using `pip install Django==4.2.4`
