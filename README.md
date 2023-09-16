@@ -24,7 +24,7 @@
      - go to directory where you want to setup the virtualenv 
      - create virtualenvironment using `python3 -m venv .`
      - run `ls` you will see list of configuration files. 
-     - Now activate the virtual environment using `source bin/activate`
+     - Now activate the virtual environment using `source bin/activate`. Basically executing the shell script that will activate the virtual environment. 
      - You can Deactivate the virtual environment using `deactivate`
      - You can directly run this command which will create virtualenv in the directory . Here you dont need to create the folder explicitly. It will automatically create the folder - `python3 -m venv <directory-name>`
     
