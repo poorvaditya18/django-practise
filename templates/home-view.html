@@ -1,7 +1,16 @@
 <!-- djanggo supports template inheritance  -->
 <!-- it will bring all the attributes of the parent  -->
-{% extends "base.html" %} 
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <h1>Titile: {{title}} - Content: {{content}} - ObjectID : {{id}}</h1>
+<ul>
+  {% for x in my_list %}
+  <li>ObjectID : {{x.id}} - Title :{{ x.title }} - Content: {{x.content}}</li>
+  <!-- you can also wrap this inside like a link <a></a> -->
+  <li>
+    <a href="/articles/{{x.id}}/">
+      Title :{{ x.title }} - Content: {{x.content}}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock content %}

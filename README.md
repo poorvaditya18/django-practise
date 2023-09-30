@@ -61,7 +61,7 @@
 
 <!-- 
 
-Hello Django (Main app )
+Hello Django (Main app ) - how to know ? It mainly have asgi.py , settings.py
       -  articles (app module)
  -->
     

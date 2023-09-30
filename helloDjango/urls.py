@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import home_view
+from articles.views import article_home_view
+
 
 urlpatterns = [
     path("",home_view),   # "" --> means home url or root url(in my case localhost = 127.0.0.1) .index/home/root
-    path('admin/', admin.site.urls),
+    path("articles/<int:id>/",article_home_view), # dynamicUrl routing 
+    path('admin/', admin.site.urls), # adminPage
 ]
