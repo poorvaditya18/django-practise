@@ -49,4 +49,19 @@
 4. What are VIEWS ?
       - Views : 
 
-  
+5. `python3 manage.py startapp <app-name>` 
+    Ex: `python manage.py startapp articles` --> you will get articles directory. You will get many default things. migrations, admin.py , model.py , apps.py , models.py, tests.py , views.py.
+
+    So it creates these default files but it didn't let django know about anything about these files. Django doesn't know about these models.
+
+    So specify in the settings.py>INSTALLED_APPS of helloDjango project. 
+    and django should know about your models - `python3 manage.py makemigrations`
+    then `python3 manage.py migrate`
+    ---- Note : Do this everytime when you change models.py. To update your changes . 
+
+<!-- 
+
+Hello Django (Main app )
+      -  articles (app module)
+ -->
+    

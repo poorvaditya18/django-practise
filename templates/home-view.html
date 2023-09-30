@@ -1,0 +1,7 @@
+<!-- djanggo supports template inheritance  -->
+<!-- it will bring all the attributes of the parent  -->
+{% extends "base.html" %} 
+
+{% block content %}
+<h1>Titile: {{title}} - Content: {{content}} - ObjectID : {{id}}</h1>
+{% endblock content %}
