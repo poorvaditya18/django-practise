@@ -65,3 +65,14 @@ Hello Django (Main app ) - how to know ? It mainly have asgi.py , settings.py
       -  articles (app module)
  -->
     
+6.  creating superuser in Django - `python manage.py createsuperuser` . you can set your own username and password . 
+
+# Register Model in the Admin
+      -> go the app/module 
+            Ex: `Articles` -> inside admin.py register your model. Changes will be reflected in django admin page. 
+
+# By default: 
+      If you do not use the ModelAdmin then the default admin interface will be provided.
+# class ModelAdmin  :
+      `The ModelAdmin class is the representation of a model in the admin interface. Usually, these are stored in a file named admin.py in your application directory`.
+      It also have many predefined admin action attributes like - list_display , search_field  , list_filter , date_hierarchy, etc.
