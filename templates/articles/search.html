@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block custom_header %}
+<!-- Override the <h1> tag from base.html -->
+<h1>Search your articles....</h1>
+{% endblock custom_header %} 
+
+
+{% block content %} 
+
+{% if object %}
+
+<h1>{{ object.title }}</h1>
+<p>{{ object.content }}</p>
+
+{% endif %} 
+{% endblock content %}

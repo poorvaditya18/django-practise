@@ -3,7 +3,30 @@ from django.http import HttpResponse
 from articles.repository import * 
 
 # Create your views here.
-def article_home_view(request,id=None,*args,**kwargs):
+
+# article search view -->
+def article_search_view(request):
+    print("Inside article_search_view...")
+    print("GET request body : "+ str(request.GET))
+    query_dict = request.GET # this is a dictionary
+    query = query_dict.get("q")
+
+    try:
+        query = int(query_dict.get("q"))
+    except:
+        query = None
+
+    article_obj = None
+    if query is not None :
+        article_obj = Article.objects.get(id=query)
+    context = {
+        "object":article_obj
+    }
+    return render(request, "search.html", context=context)
+
+
+# article detail view --> 
+def article_detail_view(request,id=None,*args,**kwargs):
 
     # print(args,kwargs) # output : () {'id': 1}
     print(id)

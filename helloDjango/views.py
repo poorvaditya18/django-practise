@@ -19,6 +19,8 @@ def home_view(request):
 
     name = "Poorvaditya"  
 
+    
+
     # from Database 
     article_obj = Article.objects.get(id=1)
 
